@@ -7,31 +7,15 @@ export default function About() {
     <>
       <div className="flex flex-col px-3 py-7 md:px-7 md:py-10 gap-4 justify-between md:flex-row">
         {/* left section */}
-        <div className="relative mx-auto px-7 py-3 h-[70vh] md:h-[80vh] w-full max-w-lg flex">
-          <div className="absolute left-1 w-70 md:w-90 lg:w-100">
-          {/* w-70 md:w-80 lg:w-100 xl:w-110 */}
-            <Animate type="fade-up">
-              <Image
-                src="/fin1.jpg"
-                alt="Team working"
-                width={350}
-                height={100}
-                className="object-cover rounded-2xl"
+        <div className="mx-auto px-7 py-3 w-full max-w-lg">
+          <Animate type="fade-left" delay={300}>
+            <Image
+              src={"/tool1.png"}
+              alt=""
+              width={500}
+              height={500}
               />
-            </Animate>
-          </div>
-          <div className="absolute top-[250px] right-1 w-40 lg:w-60">
-          {/* w-50 md:w-60 lg:w-70 xl:w-90 */}
-            <Animate type="fade-left" delay={300}>
-              <Image
-                src="/fin2.jpg"
-                alt="Business meeting"
-                width={250}
-                height={100}
-                className="object-cover rounded-2xl"
-              />
-            </Animate>
-          </div>
+          </Animate>
           {/* </div> */}
         </div>
 

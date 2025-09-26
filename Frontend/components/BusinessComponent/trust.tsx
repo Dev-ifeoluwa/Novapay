@@ -31,7 +31,9 @@ export default function Trust() {
                     height={30}
                   />
                 </div>
-                <h3 className="text-gray-600 text-xl md:text-2xl">Financial Strategies</h3>
+                <h3 className="text-gray-600 text-xl md:text-2xl">
+                  Financial Strategies
+                </h3>
                 <p className="text-md md:text-lg">
                   Tailored plans to meet your unique financial needs and goals.
                 </p>
@@ -45,7 +47,9 @@ export default function Trust() {
                     height={30}
                   />
                 </div>
-                <h3 className="text-gray-600 text-xl md:text-2xl">Tax Optimization</h3>
+                <h3 className="text-gray-600 text-xl md:text-2xl">
+                  Tax Optimization
+                </h3>
                 <p className="text-md md:text-lg">
                   Tailored plans to meet your unique financial needs and goals.
                 </p>
@@ -54,32 +58,10 @@ export default function Trust() {
           </div>
         </div>
         {/* --------right--------- */}
-        <div className="relative mx-auto px-7 py-10 h-[75vh] md:h-[90vh] w-full max-w-lg flex">
-        {/* sm:h-[90vh] md:h-[90vh] */}
-          <div className="absolute right-4 w-70 md:w-90 lg:w-100">
-          {/* w-70 md:w-80 lg:w-100 xl:w-110 */}
-            <Animate type="fade-up">
-              <Image
-                src="/fin2.jpg"
-                alt="Team working"
-                width={350}
-                height={100}
-                className="object-cover rounded-2xl"
-              />
-            </Animate>
-          </div>
-          <div className="absolute top-[300px] left-1 w-40 lg:w-60">
-          {/* w-50 md:w-60 lg:w-70 xl:w-90 */}
-            <Animate type="fade-left" delay={300}>
-              <Image
-                src="/fin1.jpg"
-                alt="Business meeting"
-                width={250}
-                height={100}
-                className="object-cover rounded-2xl"
-              />
-            </Animate>
-          </div>
+        <div className="mx-auto px-7 py-10 w-full max-w-lg flex">
+          <Animate type="fade-right" delay={300}>
+            <Image src={"/tool2.png"} alt="" width={500} height={500} />
+          </Animate>
         </div>
       </div>
     </>
