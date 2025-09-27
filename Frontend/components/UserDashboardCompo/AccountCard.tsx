@@ -1,4 +1,4 @@
-import { EyeIcon, StampIcon } from "lucide-react";
+import { EyeIcon, Plus } from "lucide-react";
 
 export default function AccountCard() {
     return(
@@ -30,8 +30,8 @@ export default function AccountCard() {
                     </div>
                     <div className="flex justify-between gap-4 items-center text-white">
                             <div className="flex items-center gap-4">
-                                <span className="bg-green-900 p-1 rounded-full"><EyeIcon /></span>
-                                <span className="rounded-full"><StampIcon /></span>
+                                <span className="bg-green-800 p-1 rounded-full"><EyeIcon /></span>
+                                <span className="rounded-full p-1 bg-green-800"><Plus /></span>
                             </div>
                             <h4 className="text-2xl md:text-3xl font-semibold text-white">₦550,000.00</h4>
                     </div>
