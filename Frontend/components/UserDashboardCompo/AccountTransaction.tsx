@@ -69,7 +69,7 @@ export default function AccountTransaction() {
           <h4 className="text-lg md:text-xl text-green-950 font-semibold">
             Recent Transaction
           </h4>
-          <span className="flex p-1 shadow-gray-500 shadow-sm cursor-pointer text-[10px] md:text-lg bg-green-300 items-center gap-1 text-white rounded-3xl">
+          <span className="flex p-1 shadow-gray-500 shadow-sm cursor-pointer text-[10px] md:text-sm bg-green-300 items-center gap-1 text-white rounded-3xl">
             <p className="bg-lime-100 p-0.5 text-gray-700 rounded-2xl">
               7days
             </p>
@@ -77,12 +77,12 @@ export default function AccountTransaction() {
           </span>
         </div>
         {/* transaction history */}
-        <div className="shadow-gray-500 shadow-sm p-0.5 md:p-3 rounded-xl">
+        <div>
           {TransactionCard.map((TransactionCard, index) => (
-            <div key={index} className="px-2 py-4 cursor-pointer md:p-4 flex flex-col gap-2">
-              <div className="flex justify-between items-center gap-3">
+            <div key={index} className="px-2 py-3 cursor-pointer md:p-4 flex flex-col">
+              <div className="flex justify-between px-2 py-3 rounded-xl shadow-gray-400 shadow-sm items-center gap-3">
                 <span className="rounded-full text-green-700">{TransactionCard.icon}</span>
-                <div className="flex flex-col max-w-sm md:w-full  items-center">
+                <div className="flex flex-col max-w-sm md:w-full items-center">
                   <h4 className="font-semibold text-sm md:text-md">
                     {TransactionCard.itemsPurchase}
                   </h4>

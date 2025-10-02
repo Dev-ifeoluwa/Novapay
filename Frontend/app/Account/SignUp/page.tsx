@@ -1,9 +1,24 @@
-export default function SignUpPage() {
-    return(
-        <>
-            <div className="text-center h-screen  justify-center items-center font-semibold bg-gray-300">
-                <h1 className="text-xl md:text-3xl text-center justify-center items-center py-50">SignUp page <span className="text-green-700">building soon</span>.....</h1>
-            </div>
-        </>
-    )
-}
+"use client"
+
+import axios from "axios";
+import AuthForm from "components/AuthForm";
+
+const SignupPage = () => {
+  const handleSignup = async (email: string, password: string) => {
+    // Add actual signup logic here (e.g., API call)
+    try {
+        const response = await axios.post('http://localhost:5000/auth/signup', {
+            email,
+            password
+        })
+        console.log("signup sucessfully", response.data)
+    } catch (error: any) {
+        console.error("signup error", error.response)
+    }
+    console.log("Sign Up:", { email, password });
+  };
+
+  return <AuthForm type="signup" onSubmit={handleSignup} />;
+};
+
+export default SignupPage;

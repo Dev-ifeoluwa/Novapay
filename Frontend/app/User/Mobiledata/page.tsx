@@ -96,9 +96,9 @@ export default function MobileDataTopup() {
                     </div>
                     <div className="grid grid-cols-3 gap-2">
                         {AirtimePrice.map((items, index) => (
-                            <div key={index} className="px-2 py-6 shadow-sm shadow-gray-600 rounded-2xl cursor-pointer text-green-800 font-semibold text-md text-center bg-gray-100">
+                            <div key={index} className="px-2 py-6 flex flex-col gap-2 shadow-sm shadow-gray-600 rounded-2xl cursor-pointer text-green-800 font-semibold text-md text-center bg-gray-100">
                                 <p>{items.dataPlan}</p>
-                                <p className="text-sm text-gray-800">{items.day}</p>
+                                <p className="text-[12px] text-white md:text-sm bg-gradient-to-r from-green-900 to-lime-400">{items.day}</p>
                                 <p className="text-[12px] md:text-sm text-gray-600">{items.Price}</p>
                             </div>
                         ))}

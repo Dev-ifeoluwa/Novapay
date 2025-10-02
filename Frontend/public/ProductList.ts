@@ -23,21 +23,6 @@ import {
 
   export const Products: Product[] = [
     {
-      icon: Wallet,
-      Name: "Reward",
-      href: "/User/Reward",
-    },
-    {
-      icon: Network,
-      Name: "Xelviotransfer",
-      href: "/",
-    },
-    {
-      icon: Monitor,
-      Name: "Tv subscription",
-      href: "/User/Tv subscription"
-    },
-    {
       icon: Earth,
       Name: "Mobile data",
       href: "/User/Mobiledata"
@@ -50,7 +35,12 @@ import {
     {
       icon: Gamepad2,
       Name: "Sport wallet Funding",
-      href: "/User/Sport funding"
+      href: "/User/Betting"
+    },
+    {
+      icon: Monitor,
+      Name: "Tv subscription",
+      href: "/User/Tvsubscription"
     },
     {
       icon: WalletCards,
@@ -60,22 +50,32 @@ import {
     {
       icon: BaggageClaim,
       Name: "Xelviomart",
-      href: "/"
+      href: "/User/Xelviomart"
     },
     {
       icon: EuroIcon,
       Name: "Convert Currency",
-      href: "/"
+      href: "/User/Convertmoney"
     },
     {
       icon: Plane,
       Name: "Travel Payment",
-      href: "/"
+      href: "/User/Travel"
     },
     {
       icon: Newspaper,
       Name: "Transaction history",
       href: "/User/Transactions"
+    },
+    {
+      icon: Wallet,
+      Name: "Reward",
+      href: "/User/Reward",
+    },
+    {
+      icon: Network,
+      Name: "Xelviotransfer",
+      href: "/User/Wallet2wallet",
     },
     {
       icon: LoaderIcon,

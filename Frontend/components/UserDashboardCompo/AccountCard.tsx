@@ -1,6 +1,15 @@
-import { EyeIcon, Plus } from "lucide-react";
+"use client"
+import { EyeIcon, Plus, EyeOffIcon, Link2 } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function AccountCard() {
+    const [showBalance, setShowBalance] = useState(false)
+    // const [showDeposit, setShowDeposite] = useState(false)
+
+    const toggleBalance = () => setShowBalance(!showBalance)
+    // const toggleDeposite = () => setShowDeposite(!showDeposit)
+
     return(
         <>
             <div className="flex flex-col gap-6 justify-center p-4 mx-auto w-full md:max-w-2xl md:p-10 bg-gradient-to-r from-green-900 to-lime-400">
@@ -8,7 +17,7 @@ export default function AccountCard() {
                     <p className="text-lg md:text-2xl text-white font-semibold">Welcome, <span className="text-green-100 font-semibold">Taiwo</span></p>
                     <div className="flex gap-6 text-lg md:text-2xl items-center">
                         <h2 className="font-semibold text-white">Xelviopay</h2>
-                        <span className="py-1 px-1.5 text-sm font-bold text-gray-700 bg-gray-200 rounded-full">TF</span>
+                        <Link href={"/User/Profile"} className="py-1 px-1.5 text-sm font-bold text-gray-700 bg-gray-200 rounded-full">TF</Link>
                     </div>
                 </div>
                 {/* bottom */}
@@ -30,13 +39,35 @@ export default function AccountCard() {
                     </div>
                     <div className="flex justify-between gap-4 items-center text-white">
                             <div className="flex items-center gap-4">
-                                <span className="bg-green-800 p-1 rounded-full"><EyeIcon /></span>
-                                <span className="rounded-full p-1 bg-green-800"><Plus /></span>
+                                <button onClick={toggleBalance} 
+                                    className="text-xl bg-green-800 p-1 rounded-full">
+                                    {showBalance ? <EyeIcon /> : <EyeOffIcon />}
+                                </button>
+                                {/* <span className="rounded-full p-1 bg-green-800"><Plus /></span> */}
+                                {/* <button onClick={toggleDeposite}
+                                    className="rounded-full p-1 bg-green-800">
+                                    <Plus />
+                                </button> */}
+                                <Link href={"/User/Deposit"}
+                                    className="rounded-full p-1 bg-green-800">
+                                    <Plus />
+                                </Link>
                             </div>
-                            <h4 className="text-2xl md:text-3xl font-semibold text-white">₦550,000.00</h4>
+                            <div className="flex items-center justify-center">
+                                <span className="text-2xl md:text-3xl font-bold">
+                                    {showBalance? '₦550,000.00' : '*********'}
+                                </span>
+                            </div>  
                     </div>
                 </div>
             </div>
+            {/* {
+                showDeposit && (
+                    <div className="mt-3 h-50 w-full bg-green-600 p-4 rounded-lg">
+                        <h2>Deposit here</h2>
+                    </div>
+                )
+            } */}
         </>
     )
 } 

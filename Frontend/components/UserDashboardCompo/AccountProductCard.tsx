@@ -9,11 +9,12 @@ export default function AccountProductCard() {
       <div className="flex flex-col gap-3 px-4 py-8">
         <div className="flex items-center justify-between">
           <h4 className="text-lg md:text-xl text-green-950 font-semibold">
-            Quick Actions
+            Avaliable Service
           </h4>
           <span className="flex cursor-pointer items-baseline-last gap-2 font-semibold text-green-950">
-            <PenIcon size={15} />
-            <p>Edit</p>
+            {/* <PenIcon size={15} /> */}
+            {/* <p>Sell all</p> */}
+            <Link href={"/User/More"}>More</Link>
           </span>
         </div>
         {/* product card */}
