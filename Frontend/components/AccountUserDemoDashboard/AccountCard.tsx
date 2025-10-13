@@ -1,5 +1,5 @@
 "use client"
-import { EyeIcon, StampIcon } from "lucide-react";
+import { EyeIcon, Plus, StampIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 
@@ -16,7 +16,7 @@ export default function AccountCard() {
                 <div className="flex items-center justify-between">
                     <p className="text-lg md:text-2xl text-white font-semibold">Hello</p>
                     <div className="flex gap-6 text-lg md:text-2xl items-center">
-                        <h2 className="font-semibold text-white">Xelviopay</h2>
+                        <h2 className="font-semibold text-white">Novapay</h2>
                         <button 
                             onClick={handleClick}
                             className="py-1 px-1.5 text-sm font-bold text-gray-50 bg-lime-500 shadow-sm cursor-pointer shadow-white rounded">Signup/Login</button>
@@ -41,8 +41,8 @@ export default function AccountCard() {
                     </div>
                     <div className="flex justify-between gap-4 items-center text-white">
                             <div className="flex items-center gap-4">
-                                <span className="bg-green-900 p-1 rounded-full"><EyeIcon /></span>
-                                <span className="rounded-full"><StampIcon /></span>
+                                <span className="bg-green-900 p-1 rounded-full"><EyeIcon size={18}/></span>
+                                <span className="bg-green-900 p-1 rounded-full"><Plus size={18}/></span>
                             </div>
                             <h4 className="text-2xl md:text-3xl font-semibold text-white">₦*********</h4>
                     </div>

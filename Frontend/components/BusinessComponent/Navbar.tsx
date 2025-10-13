@@ -20,7 +20,7 @@ export default function Navbar() {
               <Image src="/arrow-white.svg" alt="logo" height="15" width="15" />
             </span>
             <Link href="/Business">
-              xelviopay
+              Novapay
               <span className="text-green-500 font-bold text-3xl">.</span>
             </Link>
           </div>

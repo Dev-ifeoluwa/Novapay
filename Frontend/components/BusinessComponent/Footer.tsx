@@ -9,9 +9,9 @@ export default function Footer() {
     <footer className="flex flex-col mx-auto gap-8 justify-between items-center bg-gray-900 text-gray-200 px-2 py-9 md:px-6 md:py-15 md:flex-row">
       <div className="flex flex-col">
         <div className="w-full max-w-md">
-          <h3 className="font-bold text-lg mt-6 mb-2 text-white">Xelviopay</h3>
+          <h3 className="font-bold text-lg mt-6 mb-2 text-white">Novapay</h3>
           <p className="text-sm">
-            Xelviopay is authorised and regulated by the Central Bank of Nigeria
+            Novapay is authorised and regulated by the Central Bank of Nigeria
             to offer banking services. Deposits are insured by the Nigerian
             Deposit Insurance Corporation (NDIC).
           </p>
@@ -168,7 +168,7 @@ export default function Footer() {
     </footer>
     <div>
       <div className="bg-gray-800 text-center py-4">
-        <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} Xelviopay. All rights reserved built and developed by Ifeoluwa fowobaje</p>
+        <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} Novapay. All rights reserved built and developed by Ifeoluwa fowobaje</p>
       </div>
     </div>
   </>

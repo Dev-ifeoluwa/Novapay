@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="flex flex-col gap-6 w-full max-w-2xl px-1 py-5 md:px-8">
          <FancyHeading />
         <p className="mt-4 max-w-2xl  text-white text-lg md:text-2xl cursor-default">
-          Achieve financial growth, stability, and long-term success. Xelviopay
+          A fast, simple and secure Company to carryout daily to daily transactions and pay bills and more, novapay
           offers you a reliable personal banking experience
         </p>
         {/* ----button section----- */}
@@ -79,7 +79,7 @@ export default function Hero() {
           <Image src={"/hero-img.png"} alt="" width={550} height={500} />
         </Animate>
         <div className="absolute bottom-15 md:bottom-25 lg:bottom-30 left-1 md:-left-15 px-6 py-3 animate-bounce bg-green-500 rounded-xl max-w-[350px] text-white flex items-center gap-2">
-          <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">15+</h2>
+          <h2 className="text-3xl font-bold md:text-4xl lg:text-5xl">2+</h2>
           <p className="text-md md:text-xl">
             {" "}
             Years of experience <br />

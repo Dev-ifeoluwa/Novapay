@@ -84,7 +84,7 @@ export default function ProfilePage() {
                 <p className="mt-5 text-lg md:text-xl font-semibold text-white">Fowobaje Taiwo Patrick</p>
             </div>
             <span className="text-2xl md:text-3xl font-bold text-white">₦550,000.00</span>
-            <div className="flex items-center gap-17 text-white md:gap-20 mt-3 p-3 justify-center">
+            <div className="flex items-center gap-9 text-white md:gap-20 mt-3 p-3 justify-center whitespace-nowrap">
                 <Link href={"/"} className="flex flex-col items-center">
                     <span className="bg-green-900 p-2 rounded-full"><Contact size={19}/></span>
                     <p>Contact</p>

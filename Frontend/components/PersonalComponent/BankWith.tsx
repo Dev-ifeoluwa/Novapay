@@ -7,12 +7,12 @@ export default function BankWith() {
     <div className="flex flex-col gap-7 px-2 py-6 md:px-8 md:py-7">
       <div className="mt-6 flex flex-col gap-4 justify-center w-full max-w-3xl mx-auto text-center p-2 md:p-4">
         <Animate type="fade-right" delay={300}>
-          <h1 className="text-2xl md:text-5xl font-semibold text-gray-700">Bank With <span className="text-green-700">Xelviopay</span></h1>
+          <h1 className="text-2xl md:text-5xl font-semibold text-gray-700">Bank With <span className="text-green-700">Novapay</span></h1>
         </Animate>
         <p className="text-md md:text-xl text-gray-700">
           Enjoy a <span className="text-green-700">transfer success rate of 99.9%</span> and experience seamless payment
           transfers. Need to pay some bills, pay a business or send money to a
-          friend? Xelviopay transfers go through every time. We mean it.
+          friend Novapay transfers go through every time. We mean it.
         </p>
       </div>
       {/* bottom */}

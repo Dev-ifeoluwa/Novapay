@@ -52,14 +52,14 @@ export default function AccountTransaction() {
       itemsTime: "8:30 AM",
       Amount: "- ₦5,000",
     },
-    {
-      icon: <Plane />,
-      itemsPurchase: "Travel",
-      itemsDetails: "Airline",
-      DayPurchased: "Sep 14, 2025",
-      itemsTime: "9:30 AM",
-      Amount: "- ₦500,000",
-    },
+    // {
+    //   icon: <Plane />,
+    //   itemsPurchase: "Travel",
+    //   itemsDetails: "Airline",
+    //   DayPurchased: "Sep 14, 2025",
+    //   itemsTime: "9:30 AM",
+    //   Amount: "- ₦500,000",
+    // },
   ];
 
   return (
@@ -79,8 +79,8 @@ export default function AccountTransaction() {
         {/* transaction history */}
         <div>
           {TransactionCard.map((TransactionCard, index) => (
-            <div key={index} className="px-2 py-3 cursor-pointer md:p-4 flex flex-col">
-              <div className="flex justify-between px-2 py-3 rounded-xl shadow-gray-400 shadow-sm items-center gap-3">
+            <div key={index} className="p-1 cursor-pointer flex flex-col">
+              <div className="flex justify-between px-2 py-3 rounded-md shadow-gray-300 shadow-sm items-center gap-3">
                 <span className="rounded-full text-green-700">{TransactionCard.icon}</span>
                 <div className="flex flex-col max-w-sm md:w-full items-center">
                   <h4 className="font-semibold text-sm md:text-md">

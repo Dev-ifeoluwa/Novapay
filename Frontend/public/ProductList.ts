@@ -1,22 +1,17 @@
 import { Product } from "types";
 import {
     Wallet,
-    PenIcon,
-    PersonStanding,
     Gamepad2,
     PhoneCall,
     Earth,
     EuroIcon,
     WalletCards,
-    Newspaper,
     Plane,
     Network,
     Monitor,
     LoaderIcon,
-    BaggageClaim,
-    Banknote,
-    ArrowBigDownIcon,
-    DropletOff,
+    IdCard,
+    ShoppingBag
   } from "lucide-react";
 
 
@@ -43,13 +38,23 @@ import {
       href: "/User/Tvsubscription"
     },
     {
-      icon: WalletCards,
-      Name: "Loan",
-      href: "/User/Loan"
+      icon: IdCard,
+      Name: "Bank Transfer",
+      href: "/User/Transactions"
     },
     {
-      icon: BaggageClaim,
-      Name: "Xelviomart",
+      icon: Network,
+      Name: "Novatransfer",
+      href: "/User/Wallet2wallet",
+    },
+    {
+      icon: WalletCards,
+      Name: "Education bills",
+      href: "/User/Education"
+    },
+    {
+      icon: ShoppingBag,
+      Name: "Novamart",
       href: "/User/Xelviomart"
     },
     {
@@ -63,19 +68,9 @@ import {
       href: "/User/Travel"
     },
     {
-      icon: Newspaper,
-      Name: "Transaction history",
-      href: "/User/Transactions"
-    },
-    {
       icon: Wallet,
-      Name: "Reward",
+      Name: "Airtime to cash",
       href: "/User/Reward",
-    },
-    {
-      icon: Network,
-      Name: "Xelviotransfer",
-      href: "/User/Wallet2wallet",
     },
     {
       icon: LoaderIcon,

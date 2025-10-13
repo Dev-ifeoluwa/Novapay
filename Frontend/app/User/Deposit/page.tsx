@@ -86,7 +86,7 @@ export default function AddMoney() {
                     <span className="p-2 bg-green-700 text-white rounded-full"><QrCode /></span>
                     <div className="flex flex-col gap-1">
                         <h2 className="font-semibold">Scan my QR Code</h2>
-                        <p>Show OR code to any Xelviopay user</p>
+                        <p>Show QR code to any <br />Novapay user</p>
                     </div>
                 </div>
                 <div>

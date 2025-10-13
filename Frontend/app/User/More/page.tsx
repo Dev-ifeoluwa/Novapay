@@ -93,11 +93,6 @@ const MoreServicepage = () => {
         href: "/User/Loan"
       },
       {
-        icon: BaggageClaim,
-        Name: "Xelviomart",
-        href: "/"
-      },
-      {
         icon: EuroIcon,
         Name: "Convert Currency",
         href: "/"
@@ -129,9 +124,9 @@ const MoreServicepage = () => {
         </span>
         <div className="flex flex-col gap-3 mt-5">
             <p className="font-semibold">E-commerce</p>
-            <div className="shadow-sm flex flex-col items-center gap-3 w-full max-w-35 shadow-gray-400 cursor-pointer rounded-xl px-2 py-4 text-green-950 text-sm">
+            <div className="shadow-sm flex flex-col items-center gap-3 w-full max-w-27 shadow-gray-400 cursor-pointer rounded-xl px-2 py-4 text-green-950 text-sm">
                 <ShoppingBag className="text-green-950"/>
-                <p className="text-green-950">Xelviomart</p>
+                <p className="text-green-950">Novamart</p>
             </div>
         </div>
         <div className="mt-3 mb-15 text-center justify-center items-center">

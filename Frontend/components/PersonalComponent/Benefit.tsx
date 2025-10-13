@@ -14,7 +14,7 @@ export default function Benefit() {
             <Animate type="fade-up" delay={300}>
               <h2 className="text-lg text-green-800 md:text-4xl font-semibold mb-9 px-2 leading-lung">
                 Key benefit more reason to bank{" "}
-                <span className="">with xelviopay</span>
+                <span className="">with Novapay</span>
               </h2>
             </Animate>
           </div>

@@ -20,8 +20,8 @@ export default function FancyHeading() {
     <div className="relative group">
       <Animate type="fade-right" delay={300}>
         <h1 className="text-2xl mt-8 md:text-3xl lg:text-6xl leading-tight lg:leading-18 text-white font-stretch-85% font-semibold">
-            <span className="text-green-500">Empowering</span> your financial
-            success journey
+            <span className="text-green-500">Power</span> Your Daily Payment
+            With Ease
         </h1>
       </Animate>
       <div className="lens hidden group-hover:block group-active:block"></div>

@@ -80,14 +80,8 @@ import {
         <div className="flex flex-col gap-3 px-4 py-8">
           <div className="flex items-center justify-between">
             <h4 className="text-lg md:text-xl text-green-950 font-semibold">
-              Quick Actions
+              Avaliable service
             </h4>
-            <button
-              onClick={handleClick} 
-              className="flex cursor-pointer items-baseline-last gap-2 font-semibold text-green-950">
-              <PenIcon size={15} />
-              <p>Edit</p>
-            </button>
           </div>
           {/* product card */}
           <div className="mt-3 text-center justify-center items-center">
@@ -104,13 +98,6 @@ import {
               ))}
             </div>
           </div>
-          <Link
-            href={"/"}
-            className="font-bold text-sm md:text-md text-blue-950 gap-1 flex items-center mx-auto text-center justify-center"
-          >
-            <p>Show More</p>
-            <ArrowBigDownIcon />
-          </Link>
         </div>
       </>
     );
