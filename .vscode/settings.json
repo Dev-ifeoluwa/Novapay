@@ -1,0 +1,11 @@
+{
+    "workbench.settings.useSplitJSON": true,
+    "files.autoSave": "onFocusChange",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "terminal.integrated.gpuAcceleration": "off",
+    "workbench.startupEditor": "none",
+    "extensions.autoCheckUpdates": false,
+    "update.mode": "manual"
+
+}
