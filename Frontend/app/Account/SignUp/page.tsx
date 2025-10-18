@@ -26,7 +26,7 @@ export default function SignUpPage() {
         body: JSON.stringify({ firstName, lastName, email, password }),
       })
       if (res.ok) {
-        router.push("/Account/login");
+        router.push("/Account/Signin");
       } else {
         console.error("Registration failed");
       }
