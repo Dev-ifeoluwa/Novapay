@@ -9,15 +9,14 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000',
-      "https://novapay-six.vercel.app/"
+      "https://novapay-six.vercel.app"
     ],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     credentials: true,
   })
-  // app.use(cookieParser());
   app.use(cookieParser())
 
   // await app.listen(process.env.PORT ?? 5000);
-
   const port = Number(process.env.PORT) || 5000;
   await app.listen(port);
   console.log(`Server listening on port ${port}`);
