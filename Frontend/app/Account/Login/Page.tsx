@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
@@ -8,11 +9,12 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http:localhost:500";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/auth/login", {
+      const res = await fetch(`${API_URL}/auth/login`, {
         method: "POST",
         credentials: "include",
         headers: {
@@ -56,6 +58,7 @@ export default function Login() {
             Login
           </button>
         </form>
+        <Link href="/Account/SignUp" className="text-sm text-green-500 hover:underline mt-4 absolute bottom-5">Don't have an account? Sign Up</Link>
       </div>
     </>
   )

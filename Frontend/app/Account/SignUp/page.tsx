@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -11,11 +12,12 @@ export default function SignUpPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || "http:localhost:500";
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/auth/register", {
+      const res = await fetch(`${API_URL}/auth/register`, {
         method: "POST",
         credentials: "include",
         headers: {
@@ -66,6 +68,7 @@ export default function SignUpPage() {
             type="submit"
             className="w-full bg-green-700 text-white p-3 rounded cursor-pointer hover:bg-green-600 transition"
             >Signup</button>
+          <Link href="/Account/login" className="text-sm text-green-500 hover:underline mt-4 block text-center">Already have an account? Login</Link>
         </form>
       </div>
     </>
