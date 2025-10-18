@@ -57,7 +57,7 @@ export default function Signin() {
           >
             Signin
           </button>
-          <Link href="/Account/SignUp" className="text-sm text-green-500 hover:underline mt-4 absolute bottom-5">Don't have an account? Sign Up</Link>
+          <Link href="/Account/SignUp" className="text-sm text-green-500 hover:underline mt-4 block text-center">Don't have an account? Sign Up</Link>
         </form>
       </div>
     </>
