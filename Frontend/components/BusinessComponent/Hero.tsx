@@ -45,7 +45,7 @@ export default function Hero() {
             text-white p-3 md:px-3 md:py-4 rounded-full cursor-pointer 
             transition-colors duration-300"
             >
-            <Link href={"/UserDashboard"}>
+            <Link href={"/Account/loginaccount"}>
               <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></span>
               <span className="relative z-10 whitespace-nowrap">Open Account</span>
             </Link>
