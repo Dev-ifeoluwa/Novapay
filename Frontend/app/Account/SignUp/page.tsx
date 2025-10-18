@@ -68,7 +68,7 @@ export default function SignUpPage() {
             type="submit"
             className="w-full bg-green-700 text-white p-3 rounded cursor-pointer hover:bg-green-600 transition"
             >Signup</button>
-          <Link href="/Account/login" className="text-sm text-green-500 hover:underline mt-4 block text-center">Already have an account? Login</Link>
+          <Link href="/Account/Signin" className="text-sm text-green-500 hover:underline mt-4 block text-center">Already have an account? Login</Link>
         </form>
       </div>
     </>
