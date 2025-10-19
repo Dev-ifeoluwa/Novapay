@@ -51,7 +51,7 @@ export class AuthController {
             sameSite: 'lax',
             maxAge: 7 * 24 * 60 * 60 * 1000,
         })
-        return { user };
+        return { user, tokens };
     }
     @UseGuards(JwtAuthGuard)
     @Get('me')
