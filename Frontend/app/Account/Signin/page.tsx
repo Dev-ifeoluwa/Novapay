@@ -45,7 +45,7 @@ export default function Signin() {
     <>
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded shadow-md w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-6 text-center">Signin</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">Sign In</h2>
           <input 
             value={email}
             onChange={e => setEmail(e.target.value)}
@@ -60,11 +60,11 @@ export default function Signin() {
           />
           <button
             type="submit"
-            className="w-full bg-green-700 cursor-pointer text-white p-3 rounded hover:bg-green-600 transition"
+            className="w-full bg-gradient-to-r from-green-700 to-lime-400 cursor-pointer text-white p-3 rounded hover:bg-green-600 transition"
           >
-            Signin
+            Sign In
           </button>
-          <Link href="/Account/SignUp" className="text-sm text-green-500 hover:underline mt-4 block text-center">Don't have an account? Sign Up</Link>
+          <Link href="/Account/SignUp" className="text-sm text-gray-700 hover:underline mt-4 block text-center">Don't have an account? Sign Up</Link>
         </form>
       </div>
     </>

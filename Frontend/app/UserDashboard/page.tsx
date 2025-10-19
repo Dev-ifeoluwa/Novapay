@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Preloader from "components/preloader";
 
 
 export default function UserDashboard() {
@@ -53,14 +54,14 @@ export default function UserDashboard() {
         fetchDashboard();
     }, []);
 
-
-
-
     return (
         <>
             {!dashboard ? (
-                <div className="flex justify-center items-center h-screen">
-                    <p className="text-gray-600 text-lg">Loading dashboard...</p>
+                // <div className="flex justify-center items-center h-screen">
+                //     <p className="text-gray-600 text-lg">Loading dashboard...</p>
+                // </div>
+                <div>
+                    <Preloader />
                 </div>
             ) : (
                 <>
