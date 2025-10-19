@@ -7,14 +7,16 @@ import {
     EyeOffIcon
 } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 
 export default function UserDashboard() {
+    const router = useRouter();
     const [dashboard, setDashboard] = useState<any>(null);
     const [showBalance, setShowBalance] = useState(false)
     const toggleBalance = () => setShowBalance(!showBalance)
 
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || "http:localhost:500";
+    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
 
 
@@ -23,22 +25,28 @@ export default function UserDashboard() {
         
         if(!token) {
             console.error("No token found, redirecting to signin.");
-            // Optionally, redirect to signin page
+            router.push('/Account/Signin');
             return;
         }
 
         const fetchDashboard = async () => {
             const res = await fetch(`${API_URL}/auth/me`, {
+                method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${token}`,
                     'content-type': 'application/json'
                 },
-                credentials: "include",
+                // credentials: "include",
             })
             if (res.ok) {
                 const data = await res.json();
                 console.log('user Info',data);
                 setDashboard(data.dashboard);
+            } else if (res.status === 401) {
+                console.error("Unauthorized, redirecting to signin.");
+                router.push('/Account/Signin');
+            } else {
+                console.error("Failed to fetch dashboard data.");
             }
         }
         fetchDashboard();
