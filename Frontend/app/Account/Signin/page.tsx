@@ -24,10 +24,11 @@ export default function Signin() {
       })
 
       const data = await res.json();
+      const token = data.tokens?.accessToken
       if (res.ok) {
         console.log('Received data:', data);
-        console.log('Token:', data.token);
-        localStorage.setItem('token', data.token);
+        console.log('Token:', token);
+        localStorage.setItem('token', token);
         console.log('Login successful!');
         router.push("/UserDashboard"); 
         
