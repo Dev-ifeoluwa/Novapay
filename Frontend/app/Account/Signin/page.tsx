@@ -25,7 +25,8 @@ export default function Signin() {
 
       const data = await res.json();
       if (res.ok) {
-        // Save the token to localStorage or cookie
+        console.log('Received data:', data);
+        console.log('Token:', data.token);
         localStorage.setItem('token', data.token);
         console.log('Login successful!');
         router.push("/UserDashboard"); 
