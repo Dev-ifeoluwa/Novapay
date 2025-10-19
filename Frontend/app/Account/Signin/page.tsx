@@ -22,7 +22,12 @@ export default function Signin() {
         },
         body: JSON.stringify({ email, password }),
       })
+
+      const data = await res.json();
       if (res.ok) {
+        // Save the token to localStorage or cookie
+        localStorage.setItem('token', data.token);
+        console.log('Login successful!');
         router.push("/UserDashboard"); 
         
       } else {

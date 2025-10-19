@@ -17,14 +17,27 @@ export default function UserDashboard() {
     const API_URL = process.env.NEXT_PUBLIC_API_URL || "http:localhost:500";
 
 
+
     useEffect(() => {
+        const token = localStorage.getItem('token');
+        
+        if(!token) {
+            console.error("No token found, redirecting to signin.");
+            // Optionally, redirect to signin page
+            return;
+        }
+
         const fetchDashboard = async () => {
             const res = await fetch(`${API_URL}/auth/me`, {
+                headers: {
+                    'Authorization': `Bearer ${token}`,
+                    'content-type': 'application/json'
+                },
                 credentials: "include",
             })
             if (res.ok) {
                 const data = await res.json();
-                console.log(data);
+                console.log('user Info',data);
                 setDashboard(data.dashboard);
             }
         }
