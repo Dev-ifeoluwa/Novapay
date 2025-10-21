@@ -38,6 +38,11 @@ import {
       href: "/User/Tvsubscription"
     },
     {
+      icon: EuroIcon,
+      Name: "Convert Currency",
+      href: "/User/Convertmoney"
+    },
+    {
       icon: IdCard,
       Name: "Bank Transfer",
       href: "/User/Transactions"
@@ -54,13 +59,8 @@ import {
     },
     {
       icon: ShoppingBag,
-      Name: "Novamart",
+      Name: "Shalommart",
       href: "/User/Xelviomart"
-    },
-    {
-      icon: EuroIcon,
-      Name: "Convert Currency",
-      href: "/User/Convertmoney"
     },
     {
       icon: Plane,
