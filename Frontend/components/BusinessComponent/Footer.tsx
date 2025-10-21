@@ -9,11 +9,10 @@ export default function Footer() {
     <footer className="flex flex-col mx-auto gap-8 justify-between items-center bg-gray-900 text-gray-200 px-2 py-9 md:px-6 md:py-15 md:flex-row">
       <div className="flex flex-col">
         <div className="w-full max-w-md">
-          <h3 className="font-bold text-lg mt-6 mb-2 text-white">Novapay</h3>
+          <h3 className="font-bold text-lg mt-6 mb-2 text-white">Shalompay</h3>
           <p className="text-sm">
-            Novapay is authorised and regulated by the Central Bank of Nigeria
-            to offer banking services. Deposits are insured by the Nigerian
-            Deposit Insurance Corporation (NDIC).
+            Shalompay is a fast and growing platform where you can pay for bills, convert 
+            one currency to another, with high security and at the best exchange rate.
           </p>
         </div>
         <div>
@@ -23,7 +22,7 @@ export default function Footer() {
                   text-white p-2 md:px-3 md:py-2 rounded-xl cursor-pointer 
                   transition-colors duration-300"
               >
-              <Link href={"/"} className="flex items-center">
+              <Link href={"/Account/loginaccount"} className="flex items-center">
                 <Image src="/playstore.svg" alt="logo" height="20" width="20" />
                 <span>
                   <p className="text-[12px] md:text-md font-medium">Get it on</p>
@@ -37,7 +36,7 @@ export default function Footer() {
                   text-white p-2 md:px-3 md:py-2 rounded-xl cursor-pointer 
                   transition-colors duration-300"
               >
-              <Link href={"/"} className="flex items-center">
+              <Link href={"/Account/loginaccount"} className="flex items-center">
                 <Image src="/apple.svg" alt="logo" height="30" width="30" />
                 <span>
                   <p className="text-[12px] md:text-md font-medium">Get it on</p>
@@ -51,7 +50,7 @@ export default function Footer() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
         {/* xelviopay Info */}
         {/* For Business */}
-        <div>
+        {/* <div>
           <h4 className="font-semibold mb-2 text-white">For Business</h4>
           <ul className="space-y-1 text-sm">
             <li>
@@ -75,29 +74,29 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
         {/* For Personal */}
         <div>
           <h4 className="font-semibold mb-2 text-white">For Personal</h4>
           <ul className="space-y-1 text-sm">
             <li>
-              <a href="#" className="hover:text-green-400 transition">
-                Instant Debit Card
+              <a href="/Account/loginaccount" className="hover:text-green-400 transition">
+                Open an Account
               </a>
             </li>
             <li>
-              <a href="/Personal" className="hover:text-green-400 transition">
-                Personal Account
+              <a href="/" className="hover:text-green-400 transition">
+                Contact Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
+              <a href="/" className="hover:text-green-400 transition">
                 Payment
               </a>
             </li>
             <li>
-              <a href="/Personal" className="hover:text-green-400 transition">
-                Personal Banking
+              <a href="/" className="hover:text-green-400 transition">
+                About Us
               </a>
             </li>
           </ul>
@@ -107,28 +106,28 @@ export default function Footer() {
           <h4 className="font-semibold mb-2 text-white">Company</h4>
           <ul className="space-y-1 text-sm">
             <li>
-              <a href="#" className="hover:text-green-400 transition">
-                About Us
+              <a href="/" className="hover:text-green-400 transition">
+                ShalomTV
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
-                Xelviomart
+              <a href="/" className="hover:text-green-400 transition">
+                Shalommart
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
+              <a href="/" className="hover:text-green-400 transition">
                 Join Our Team
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
+              <a href="/" className="hover:text-green-400 transition">
                 Press & Media
               </a>
             </li>
             <li>
-              <a href="/Contact" className="hover:text-green-400 transition">
-                Contact Us
+              <a href="/" className="hover:text-green-400 transition">
+                Become a Partner
               </a>
             </li>
           </ul>
@@ -138,27 +137,27 @@ export default function Footer() {
           <h4 className="font-semibold mb-2 text-white">Resource</h4>
           <ul className="space-y-1 text-sm">
             <li>
-              <a href="#" className="hover:text-green-400 transition">
+              <a href="/" className="hover:text-green-400 transition">
                 Help center
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
+              <a href="/" className="hover:text-green-400 transition">
                 Learning Centre
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
-                Whistleblower Policy
+              <a href="/" className="hover:text-green-400 transition">
+                Become an Agent
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
-                IMS Policy
+              <a href="/" className="hover:text-green-400 transition">
+                Term and Policy
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-green-400 transition">
+              <a href="/" className="hover:text-green-400 transition">
                 Security Trust Center
               </a>
             </li>
@@ -168,7 +167,7 @@ export default function Footer() {
     </footer>
     <div>
       <div className="bg-gray-800 text-center py-4">
-        <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} Novapay. All rights reserved built and developed by Ifeoluwa fowobaje</p>
+        <p className="text-xs text-gray-400">&copy; {new Date().getFullYear()} Shalompay. All rights reserved built and developed by Ifeoluwa fowobaje</p>
       </div>
     </div>
   </>

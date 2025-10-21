@@ -19,8 +19,8 @@ export default function FancyHeading() {
   return (
     <div className="relative group">
       <Animate type="fade-right" delay={300}>
-        <h1 className="text-2xl mt-8 md:text-3xl lg:text-6xl leading-tight lg:leading-18 text-white font-stretch-85% font-semibold">
-            <span className="text-green-500">Power</span> Your Daily Payment
+        <h1 className="text-2xl mt-0.5 md:text-3xl lg:text-5xl leading-tight lg:leading-18 text-white font-stretch-85% font-semibold">
+            <span className="text-green-500">Power</span> Your Daily bill Payment
             With Ease
         </h1>
       </Animate>

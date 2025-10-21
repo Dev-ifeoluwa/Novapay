@@ -16,22 +16,25 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center gap-2 text-2xl font-bold">
-            <span className="bg-green-500 rounded-full p-2">
-              <Image src="/arrow-white.svg" alt="logo" height="15" width="15" />
+            <span className="bg-green-950 rounded-full p-1">
+              <Image src="/favicon.ico" alt="logo" height="23" width="23" />
             </span>
             <Link href="/Business">
-              Novapay
+              Shalompay
               <span className="text-green-500 font-bold text-3xl">.</span>
             </Link>
           </div>
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-15 text-lg">
-            <Link href="/Business" className="hover:text-gray-200 transition-colors">
+            {/* <Link href="/Business" className="hover:text-gray-200 transition-colors">
               Business
-            </Link>
+            </Link> */}
             <Link href="/Personal" className="hover:text-gray-200 transition-colors">
               Personal
+            </Link>
+            <Link href="/" className="block hover:text-gray-200">
+              About Us
             </Link>
             <Link href="/Company" className="hover:text-gray-200 transition-colors">
               Company
@@ -45,7 +48,7 @@ export default function Navbar() {
           <div className="hidden md:block relative px-6 py-2 font-semibold rounded-md overflow-hidden group">
             <Link href="/Account/loginaccount">
               <span className="absolute inset-0 bg-black translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-              <span className="relative z-10">Login / signup</span>
+              <span className="relative z-10">Open Account</span>
             </Link>
           </div>
 
@@ -61,11 +64,14 @@ export default function Navbar() {
       {/* Mobile Sidebar */}
       {isOpen && (
         <div className="md:hidden bg-green-700 text-white px-6 py-4 space-y-4">
-          <Link href="/Business" className="block hover:text-gray-200">
+          {/* <Link href="/Business" className="block hover:text-gray-200">
            Business
-          </Link>
+          </Link> */}
           <Link href="/Personal" className="block hover:text-gray-200">
             Personal
+          </Link>
+          <Link href="/" className="block hover:text-gray-200">
+            About Us
           </Link>
           <Link href="/Company" className="block hover:text-gray-200">
             Company
@@ -78,7 +84,7 @@ export default function Navbar() {
             className="relative inline-block px-6 py-2 font-semibold rounded-md overflow-hidden group"
           >
             <span className="absolute inset-0 bg-black translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></span>
-            <span className="relative z-10">Login / signup</span>
+            <span className="relative z-10">Open Account</span>
           </Link>
         </div>
       )}

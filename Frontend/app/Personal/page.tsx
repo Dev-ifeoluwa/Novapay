@@ -12,9 +12,9 @@ export default function PersonalPage() {
       <Navbar />
       <Hero />
       <BankWith />
+      <Benefit />
       <PersonalAccount />
       <Payment />
-      <Benefit />
       <Footer />
     </>
   );
