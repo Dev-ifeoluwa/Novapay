@@ -23,10 +23,10 @@ export default function Payment() {
             >Learn More</Link>
         </div>
         {/* right */}
-        <div>
-        <Animate type="fade-down" delay={300}>
-          <Image src={"/app2.png"} alt="" width={300} height={300} />
-        </Animate>
+        <div className="max-w-[250px] md:max-w-md lg:max-w-lg">
+          <Animate type="fade-down" delay={300}>
+            <Image src={"/app2.png"} alt="" width={300} height={300} />
+          </Animate>
         </div>
       </div>
     </div>

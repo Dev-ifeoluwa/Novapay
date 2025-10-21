@@ -38,7 +38,7 @@ export default function BankWith() {
         {/* right */}
         <div className="flex">
           <Animate type="fade-down" delay={300}>
-            <Image src={"/app3.png"} alt="" width={300} height={300} className="mr-12 -rotate-30" />
+            <Image src={"/app3.png"} alt="" width={300} height={300} className="mr-12 -rotate-25 max-w-[250px] md:max-w-md lg:max-w-lg" />
           </Animate>
           {/* <Animate type="fade-down" delay={300}>
             <Image src={"/app2.png"} alt="" width={300} height={300} className="mr-12"/>

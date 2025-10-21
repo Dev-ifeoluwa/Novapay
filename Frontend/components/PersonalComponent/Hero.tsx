@@ -76,7 +76,7 @@ export default function Hero() {
         </div> */}
       </div>
       {/* -------------- */}
-      <div className="relative md:pr-15 -mb-10">
+      <div className="relative pr-0 md:pr-15 -mb-10 max-w-[250px] md:max-w-md lg:max-w-lg">
         {/* right section */}
         <Animate type="flip-right" delay={300}>
           <Image 

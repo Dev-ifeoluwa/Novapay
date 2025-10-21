@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function Benefit() {
   return (
     <>
-      <div className="flex flex-col gap-4 px-2 py-7 md:px-7 md:py-14">
+      <div className="flex flex-col gap-4 px-4 py-7 md:px-7 md:py-14">
         {/* top */}
         <div className="flex justify-between items-center lg:flex-row">
           <div className="w-full max-w-lg">

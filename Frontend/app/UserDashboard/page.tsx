@@ -1,11 +1,7 @@
 "use client";
 import AccountProductCard from "components/UserDashboardCompo/AccountProductCard";
 import { useEffect, useState } from "react";
-import {
-    EyeIcon,
-    Plus,
-    EyeOffIcon
-} from "lucide-react";
+import { EyeIcon, Plus, EyeOffIcon } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Preloader from "components/preloader";
@@ -19,13 +15,10 @@ export default function UserDashboard() {
 
     const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
-
-    
-
     useEffect(() => {
         const token = localStorage.getItem('token');
-        
-        if(!token) {
+
+        if (!token) {
             console.error("No token found, redirecting to signin.");
             router.push('/Account/Signin');
             return;
@@ -42,7 +35,7 @@ export default function UserDashboard() {
             })
             if (res.ok) {
                 const data = await res.json();
-                console.log('user Info',data);
+                console.log('user Info', data);
                 setDashboard(data.dashboard);
             } else if (res.status === 401) {
                 console.error("Unauthorized, redirecting to signin.");
@@ -69,7 +62,9 @@ export default function UserDashboard() {
                             </div>
                             <div className="flex gap-4 text-lg md:text-2xl items-center">
                                 <h2 className="font-semibold text-white">Shalompay</h2>
-                                <Link href={"/User/Profile"} className="py-1 px-1.5 text-sm font-bold text-gray-700 bg-gray-200 rounded-full">TF</Link>
+                                <Link href={"/User/Profile"} className="p-2 text-sm font-bold text-gray-700 bg-gray-200 rounded-full">
+                                    {`${dashboard.firstName?.[0] ?? "U"}${dashboard.lastName?.[0] ?? ""}`}
+                                </Link>
                             </div>
                         </div>
                         {/* bottom */}
