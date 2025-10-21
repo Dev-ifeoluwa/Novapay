@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 const metadata: Metadata = {
-  title: "xelviopay - Built for You, Built for Tomorrow",
-  description: "banking app for the future",
+  title: "shalompay - Built for You, Built for Tomorrow",
+  description: "Bills and payment app for the future",
 };
 
 export default function RootLayout({
