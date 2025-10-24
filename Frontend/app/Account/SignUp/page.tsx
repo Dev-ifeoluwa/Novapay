@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Signup = () => {
   const router = useRouter();
@@ -22,7 +22,6 @@ const Signup = () => {
     e.preventDefault();
     try {
       const res = await fetch(`${API_URL}/auth/register`, {
-      // const res = await fetch('http://localhost:5000/auth/register', {
         method: "POST",
         credentials: "include",
         headers: {

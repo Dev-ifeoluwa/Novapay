@@ -1,12 +1,12 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
-import React, { useState } from "react";
+import { useState } from "react";
 
 const SetPin: React.FC = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const email = searchParams.get("email"); // ✅ get from signup redirect
+  const email = searchParams.get("email");
   const [pin, setPin] = useState(["", "", "", ""]);
 
   const handleChange = (value: string, index: number) => {
@@ -31,7 +31,6 @@ const SetPin: React.FC = () => {
 
     try {
       const res = await fetch(`${API_URL}/auth/setPin`, {
-      // const res = await fetch('http://localhost:5000/auth/setPin', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, transactionPin }),
