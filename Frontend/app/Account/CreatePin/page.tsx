@@ -66,7 +66,7 @@ const SetPin: React.FC = () => {
               maxLength={1}
               value={digit}
               onChange={(e) => handleChange(e.target.value, i)}
-              className="w-10 h-10 text-center text-lg font-semibold border-b-2 border-gray-300 focus:border-indigo-500 outline-none"
+              className="w-10 h-10 text-center text-lg font-semibold border-b-2 border-gray-300 focus:border-green-500 outline-none"
             />
           ))}
         </div>
