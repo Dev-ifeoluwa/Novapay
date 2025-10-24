@@ -18,6 +18,16 @@ import {
 
   export const Products: Product[] = [
     {
+      icon: EuroIcon,
+      Name: "Convert Currency",
+      href: "/User/Convertmoney"
+    },
+    {
+      icon: IdCard,
+      Name: "Gift card",
+      href: "/User/Transactions"
+    },
+    {
       icon: Earth,
       Name: "Mobile data",
       href: "/User/Mobiledata"
@@ -38,18 +48,8 @@ import {
       href: "/User/Tvsubscription"
     },
     {
-      icon: EuroIcon,
-      Name: "Convert Currency",
-      href: "/User/Convertmoney"
-    },
-    {
-      icon: IdCard,
-      Name: "Bank Transfer",
-      href: "/User/Transactions"
-    },
-    {
       icon: Network,
-      Name: "Novatransfer",
+      Name: "Wallet to Wallet",
       href: "/User/Wallet2wallet",
     },
     {

@@ -78,12 +78,12 @@ export default function ProfilePage() {
     {
       icon: Settings,
       title: "Settings",
-      href: "/",
+      href: "/User/Settings",
     },
     {
       icon: Save,
       title: "Refer And Earn",
-      href: "/",
+      href: "/User/earn",
     },
   ];
 

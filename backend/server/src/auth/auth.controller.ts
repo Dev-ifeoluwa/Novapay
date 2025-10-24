@@ -12,12 +12,25 @@ export class AuthController {
     ) {}
 
     @Post("register")
-    async register(@Body() body: { email: string; password: string; firstName: string; lastName: string }, 
+    async register(@Body() body: { 
+        email: string; 
+        password: string; 
+        firstName: string; 
+        lastName: string, 
+        phoneNumber: string, 
+        // transactionPin: string 
+    }, 
     @Res({ passthrough: true }) res: Response) {
         const existing = await this.usersService.findByEmail(body.email);
         if (existing) throw new BadRequestException('User already exists');
 
-        const user = await this.usersService.createUser(body.email, body.password, body.firstName, body.lastName);
+        const user = await this.usersService.createUser(
+            body.email, 
+            body.password, 
+            body.firstName,
+            body.lastName, 
+            body.phoneNumber
+        );
         const tokens = await this.authService.login(user);
 
         res.cookie('jid', tokens.accessToken, {
@@ -28,6 +41,17 @@ export class AuthController {
         })
         return { user };
     }
+
+    @Post("setPin") 
+    async setPin(@Body() body: {  email: string; transactionPin: string }) {
+        const user = await this.usersService.findByEmail(body.email);
+        if (!user) throw new BadRequestException('User not found');
+
+        await this.usersService.updatePin(user.id, body.transactionPin);
+
+        return { message: 'PIN set successfully' };
+    }
+        
 
     @Post("login")
     @HttpCode(200)

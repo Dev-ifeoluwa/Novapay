@@ -7,7 +7,11 @@ export class UsersService {
     constructor(private prisma: PrismaService) {}
 
     // ---------
-    async createUser(email: string, password: string, firstName: string, lastName: string) {
+    async createUser(
+                    email: string, password: string, 
+                    firstName: string, lastName: string, 
+                    phoneNumber: string
+                    ) {
         const hash = await bcrypt.hash(password, 10);
         const user = await this.prisma.totalUser.create({
             data: {
@@ -15,6 +19,7 @@ export class UsersService {
                 password: hash,
                 firstName,
                 lastName,
+                phoneNumber,
                 balance: 0
             },
             select: { 
@@ -22,6 +27,7 @@ export class UsersService {
                 email: true, 
                 firstName: true, 
                 lastName: true, 
+                phoneNumber: true,
                 createdAt: true, 
                 updatedAt: true,
                 balance: true
@@ -29,6 +35,14 @@ export class UsersService {
         })
         return user;
     }
+
+    async updatePin(userId: number, transactionPin: string) {
+    return this.prisma.totalUser.update({
+    where: { id: userId },
+    data: { transactionPin },
+      });
+    }
+
 
     // ---------
     async findByEmail(email: string) {
@@ -53,6 +67,7 @@ export class UsersService {
       lastName: true,
       balance: true,
       accountNumber: true,
+      phoneNumber: true,
       transactions: {
         orderBy: { createdAt: 'desc' },
         select: {
