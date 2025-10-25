@@ -31,7 +31,7 @@ import {
       },
       {
         icon: <Network />,
-        Name: "Xelviotransfer",
+        Name: "Shalomtransfer",
       },
       {
         icon: <Monitor />,
@@ -49,18 +49,18 @@ import {
         icon: <Gamepad2 />,
         Name: "Sport wallet Funding",
       },
-      {
-        icon: <WalletCards />,
-        Name: "Loan",
-      },
+      // {
+      //   icon: <WalletCards />,
+      //   Name: "Loan",
+      // },
       {
         icon: <LoaderIcon />,
         Name: "Business Account",
       },
-      {
-        icon: <BaggageClaim />,
-        Name: "Xelviomart",
-      },
+      // {
+      //   icon: <BaggageClaim />,
+      //   Name: "Xelviomart",
+      // },
       {
         icon: <EuroIcon />,
         Name: "Convert Currency",
@@ -69,10 +69,10 @@ import {
         icon: <Plane />,
         Name: "Travel Payment",
       },
-      {
-        icon: <Newspaper />,
-        Name: "Transaction history",
-      },
+      // {
+      //   icon: <Newspaper />,
+      //   Name: "Transaction history",
+      // },
     ];
   
     return (
@@ -80,7 +80,7 @@ import {
         <div className="flex flex-col gap-3 px-4 py-8">
           <div className="flex items-center justify-between">
             <h4 className="text-lg md:text-xl text-green-950 font-semibold">
-              Avaliable service
+              Service
             </h4>
           </div>
           {/* product card */}
