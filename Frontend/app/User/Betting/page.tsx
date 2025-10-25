@@ -37,7 +37,7 @@ export default function SportBettingTopup() {
     ]
 
     return(
-            <div className="p-2 mb-15 text-sm md:text-md flex pt-5 flex-col gap-5">
+            <div className="p-2 mb-15 text-sm md:text-md pt-8 flex flex-col gap-5">
                 <span className="flex justify-between px-2 items-center">
                     <p className="flex items-center gap-3">
                         <ArrowLeft 

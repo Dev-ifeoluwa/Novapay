@@ -14,7 +14,7 @@ export default function AccountProductCard() {
           <span className="flex cursor-pointer items-baseline-last gap-2 font-semibold text-green-950">
             {/* <PenIcon size={15} /> */}
             {/* <p>Sell all</p> */}
-            <Link href={"/User/More"}>More</Link>
+            <Link href={"/User/ViewMore"}>More</Link>
           </span>
         </div>
         {/* product card */}

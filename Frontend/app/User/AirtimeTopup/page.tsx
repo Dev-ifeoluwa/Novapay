@@ -47,7 +47,7 @@ export default function AirtimeTopup() {
     ]
 
     return (
-        <div className="p-2 mb-15 text-sm md:text-md pt-4 md:pt-5 flex flex-col gap-5">
+        <div className="p-2 mb-15 text-sm md:text-md pt-8 md:pt-5 flex flex-col gap-5">
             {error && (
                 <div className="bg-red-400 font-semibold text-white text-[12px] md:text-sm text-center py-2 rounded ">{error}</div>
             )}

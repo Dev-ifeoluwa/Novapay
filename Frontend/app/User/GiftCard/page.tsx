@@ -111,8 +111,8 @@ const GiftCardApp: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 text-sm md:text-md">
-      <span className="flex justify-between px-2 -mt-3 mb-6 items-center">
+    <div className="min-h-screen bg-gray-50 py-13 px-0.5 mb-4 text-sm md:text-md">
+      <span className="flex justify-between px-2 -mt-3 mb-13 items-center">
         <p className="flex items-center gap-3">
           <ArrowLeft
             onClick={HandClick}

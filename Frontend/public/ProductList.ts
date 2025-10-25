@@ -48,34 +48,9 @@ import {
       href: "/User/Tvsubscription"
     },
     {
-      icon: Network,
-      Name: "Wallet to Wallet",
-      href: "/User/Wallet2wallet",
-    },
-    {
-      icon: WalletCards,
-      Name: "Education bills",
-      href: "/User/Education"
-    },
-    {
-      icon: ShoppingBag,
-      Name: "Shalommart",
-      href: "/User/Xelviomart"
-    },
-    {
-      icon: Plane,
-      Name: "Travel Payment",
-      href: "/User/Travel"
-    },
-    {
-      icon: Wallet,
-      Name: "Airtime to cash",
-      href: "/User/Reward",
-    },
-    {
       icon: LoaderIcon,
       Name: "view More",
-      href: "/User/More"
+      href: "/User/ViewMore"
     },
   ]
 

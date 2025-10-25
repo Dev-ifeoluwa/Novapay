@@ -55,7 +55,7 @@ export default function UserDashboard() {
                 </div>
             ) : (
                 <>
-                    <div className="flex flex-col gap-6 justify-center py-5 px-3 mx-auto w-full md:max-w-2xl md:p-10 bg-gradient-to-r from-green-900 to-lime-400">
+                    <div className="flex flex-col gap-6 justify-center py-8 px-3 mx-auto w-full md:max-w-2xl md:p-10 bg-gradient-to-r from-green-900 to-lime-400">
                         <div className="flex items-center justify-between">
                             <div className="max-w-[200px]">
                                 <p className="text-lg md:text-2xl text-white font-semibold whitespace-break-spaces">Welcome, <span className="text-green-100 font-semibold">{dashboard.firstName}!</span></p>
