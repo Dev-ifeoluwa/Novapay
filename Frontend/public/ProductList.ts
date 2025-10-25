@@ -18,14 +18,14 @@ import {
 
   export const Products: Product[] = [
     {
+      icon: IdCard,
+      Name: "Gift card",
+      href: "/User/GiftCard"
+    },
+    {
       icon: EuroIcon,
       Name: "Convert Currency",
       href: "/User/Convertmoney"
-    },
-    {
-      icon: IdCard,
-      Name: "Gift card",
-      href: "/User/Transactions"
     },
     {
       icon: Earth,
