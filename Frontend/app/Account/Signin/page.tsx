@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const Signin = () => {
   const router = useRouter();
@@ -31,14 +32,17 @@ const Signin = () => {
       const token = data.tokens?.accessToken
       if (res.ok) {
         localStorage.setItem('token', token);
+        toast.success("Login in successfully!")
         console.log('Login successful!');
         router.push("/UserDashboard"); 
         
       } else {
+        console.error("Login failed");
         console.error("Signin failed");
       }
     }
     catch (error) {
+      toast.error("Something went wrong. Please try again later.");
       console.error("Error during Login:", error);
     }
   }
@@ -124,13 +128,14 @@ const Signin = () => {
           {/* Login Button */}
           <button
             type="submit"
-            className="w-full cursor-pointer bg-gradient-to-r from-green-700 to-lime-400 text-white py-2 rounded-lg font-semibold hover:bg-gray-900 transition"
+            className="w-full cursor-pointer bg-linear-to-r from-green-700 to-lime-400 text-white py-2 rounded-lg font-semibold hover:bg-gray-900 transition"
           >
             Login
           </button>
           <Link href="/Account/SignUp" className="text-sm text-gray-700 hover:underline -mt-6 block text-center">Don't have an account? Sign Up</Link>
         </form>
       </div>
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 };

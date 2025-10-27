@@ -2,6 +2,7 @@
 
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const SetPinCom: React.FC = () => {
   const router = useRouter();
@@ -37,11 +38,14 @@ const SetPinCom: React.FC = () => {
       });
 
       if (res.ok) {
+        toast.success("Pin created successfully!");
         router.push("/Account/Signin");
       } else {
+        toast.error("Fail to create pin. Please try again.");
         console.error("Failed to set PIN");
       }
     } catch (err) {
+      toast.error("Something went wrong. Please try again later.");
       console.error("Error:", err);
     }
   };
@@ -73,11 +77,12 @@ const SetPinCom: React.FC = () => {
 
         <button
           type="submit"
-          className="w-full py-2 bg-gradient-to-r from-green-700 to-lime-400 text-white rounded-lg font-medium hover:opacity-90 transition"
+          className="w-full py-2 bg-linear-to-r from-green-700 to-lime-400 text-white rounded-lg font-medium hover:opacity-90 transition"
         >
           Proceed
         </button>
       </form>
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 };

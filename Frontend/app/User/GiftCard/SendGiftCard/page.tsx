@@ -15,7 +15,7 @@ const SendGiftCardSection: React.FC = () => {
       <div className="space-y-6">
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
           <div className="flex">
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <svg className="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
               </svg>
@@ -39,8 +39,8 @@ const SendGiftCardSection: React.FC = () => {
                 type="email"
                 value={recipientEmail}
                 onChange={(e) => setRecipientEmail(e.target.value)}
-                className="w-full border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
-                placeholder="friend@example.com"
+                className="w-full py-3 rounded outline-0 border-0"
+                placeholder="excel001@example.com"
                 required
               />
             </div>
@@ -53,7 +53,7 @@ const SendGiftCardSection: React.FC = () => {
                 type="text"
                 value={recipientName}
                 onChange={(e) => setRecipientName(e.target.value)}
-                className="w-full border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                className="w-full border-gray-300 rounded-lg outline-0 border-0 py-3"
                 placeholder="Enter name"
               />
             </div>
@@ -65,7 +65,7 @@ const SendGiftCardSection: React.FC = () => {
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Select Gift Card
               </label>
-              <select className="w-full border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+              <select className="w-full border-gray-300 border-0 outline-0 rounded-lg py-3">
                 <option>Amazon - $50</option>
                 <option>Apple - $25</option>
                 <option>Starbucks - $20</option>
@@ -81,7 +81,7 @@ const SendGiftCardSection: React.FC = () => {
                 type="date"
                 value={scheduleDate}
                 onChange={(e) => setScheduleDate(e.target.value)}
-                className="w-full border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                className="w-full border-gray-300 rounded-lg outline-0 border-0"
                 min={new Date().toISOString().split('T')[0]}
               />
             </div>
@@ -97,7 +97,7 @@ const SendGiftCardSection: React.FC = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             rows={4}
-            className="w-full border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+            className="w-full border-gray-300 rounded-lg border-0 py-3 outline-0"
             placeholder="Add a personal message for the recipient..."
             maxLength={500}
           />
@@ -109,7 +109,7 @@ const SendGiftCardSection: React.FC = () => {
         {/* Preview */}
         <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
           <div className="text-gray-500 mb-2">Gift Card Preview</div>
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg p-6 text-white max-w-md mx-auto">
+          <div className="bg-linear-to-r from-blue-500 to-purple-600 rounded-lg p-6 text-white max-w-md mx-auto">
             <div className="text-2xl font-bold mb-2">$50 Gift Card</div>
             <div className="text-lg mb-4">Amazon</div>
             <div className="text-sm opacity-90">To: {recipientName || 'Recipient Name'}</div>

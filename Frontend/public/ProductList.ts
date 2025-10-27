@@ -47,11 +47,11 @@ import {
       Name: "Tv subscription",
       href: "/User/Tvsubscription"
     },
-    {
-      icon: LoaderIcon,
-      Name: "view More",
-      href: "/User/ViewMore"
-    },
+    // {
+    //   icon: LoaderIcon,
+    //   Name: "view More",
+    //   href: "/User/ViewMore"
+    // },
   ]
 
 

@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import { useState } from "react";
 
   const BuyGiftCardSection: React.FC = () => {
@@ -7,12 +8,36 @@ import { useState } from "react";
   const [quantity, setQuantity] = useState<number>(1);
 
   const brands = [
-    { id: 'amazon', name: 'Amazon', logo: '🛒' },
-    { id: 'apple', name: 'Apple', logo: '🍎' },
-    { id: 'starbucks', name: 'Starbucks', logo: '☕' },
-    { id: 'google', name: 'Google', logo: '🔍' },
-    { id: 'netflix', name: 'Netflix', logo: '🎬' },
-    { id: 'spotify', name: 'Spotify', logo: '🎵' },
+    { 
+      id: 'Amazon',
+      name: 'Amazon',
+      logo: "/amazon.webp" 
+    },
+    { 
+      id: 'Apple', 
+      name: 'Apple', 
+      logo: '/apple.jfif' 
+    },
+    {
+       id: 'Starbucks', 
+       name: 'Starbucks', 
+       logo: '/starbucks.jfif' 
+    },
+    {
+       id: 'Google', 
+       name: 'Google', 
+       logo: '/google.jfif' 
+    },
+    {
+       id: 'Netflix', 
+       name: 'Netflix', 
+       logo: '/Netfilx.jfif' 
+    },
+    {
+       id: 'Spotify', 
+       name: 'Spotify', 
+       logo: '/sportify.png' 
+    },
   ];
 
   const presetAmounts = [25, 50, 100, 200, 500];
@@ -32,13 +57,19 @@ import { useState } from "react";
               <button
                 key={brand.id}
                 onClick={() => setSelectedBrand(brand.id)}
-                className={`p-4 border rounded-lg text-left transition-all ${
+                className={`p-4 border w-full mx-auto text-center rounded-lg transition-all ${
                   selectedBrand === brand.id
-                    ? 'border-blue-500 ring-2 ring-blue-100 bg-blue-50'
+                    ? 'border-green-500 ring-2 ring-blue-100 bg-blue-50'
                     : 'border-gray-200 hover:border-gray-300'
                 }`}
               >
-                <div className="text-2xl mb-2">{brand.logo}</div>
+                  <Image 
+                    src={brand.logo} 
+                    alt={brand.name} 
+                    width={84} 
+                    height={84} 
+                    className="rounded-md mx-auto mb-2"
+                  />
                 <div className="font-medium text-gray-900">{brand.name}</div>
               </button>
             ))}
@@ -77,7 +108,7 @@ import { useState } from "react";
                 type="number"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
-                className="block w-full pl-7 pr-12 border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
+                className="block w-full pl-7 pr-12 border-gray-300 rounded-lg outline-0 border-0 focus:ring-blue-500 focus:border-blue-500"
                 placeholder="0.00"
                 min="1"
                 max="1000"
@@ -112,6 +143,10 @@ import { useState } from "react";
         <div className="bg-gray-50 rounded-lg p-4">
           <h4 className="font-semibold text-gray-900 mb-3">Order Summary</h4>
           <div className="space-y-2 text-sm">
+            <div className="flex justify-between">
+              <span className="text-gray-600">Card Type:</span>
+              <span className="text-gray-900">{selectedBrand}</span>
+            </div>
             <div className="flex justify-between">
               <span className="text-gray-600">Card Value:</span>
               <span className="text-gray-900">${amount || '0'}</span>

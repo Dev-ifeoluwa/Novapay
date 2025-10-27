@@ -38,15 +38,15 @@ const MyCardsSection: React.FC<MyCardsSectionProps> = ({ cards, selectedCard, on
     <div className="space-y-6">
       {/* Quick Actions */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-        <button className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-left hover:bg-blue-100 transition-colors">
+        <button className="bg-blue-50 cursor-pointer border border-blue-200 rounded-lg p-4 text-left hover:bg-blue-100 transition-colors">
           <div className="text-blue-600 font-semibold">Add Gift Card</div>
           <div className="text-blue-500 text-sm mt-1">Redeem a new card</div>
         </button>
-        <button className="bg-green-50 border border-green-200 rounded-lg p-4 text-left hover:bg-green-100 transition-colors">
+        <button className="bg-green-50 cursor-pointer border border-green-200 rounded-lg p-4 text-left hover:bg-green-100 transition-colors">
           <div className="text-green-600 font-semibold">Buy Gift Card</div>
           <div className="text-green-500 text-sm mt-1">Purchase new card</div>
         </button>
-        <button className="bg-purple-50 border border-purple-200 rounded-lg p-4 text-left hover:bg-purple-100 transition-colors">
+        <button className="bg-purple-50 cursor-pointer border border-purple-200 rounded-lg p-4 text-left hover:bg-purple-100 transition-colors">
           <div className="text-purple-600 font-semibold">Send Gift Card</div>
           <div className="text-purple-500 text-sm mt-1">Gift to someone</div>
         </button>

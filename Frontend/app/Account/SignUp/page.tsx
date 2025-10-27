@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 const Signup = () => {
   const router = useRouter();
@@ -31,12 +32,15 @@ const Signup = () => {
 
       })
       if (res.ok) {
+        toast.success("Account created successfully!");
         router.push(`/Account/CreatePin?email=${encodeURIComponent(email)}`);
       } else {
+        toast.error("Registration failed. Please try again.");
         console.error("Registration failed");
       }
     }
     catch (error) {
+      toast.error("Something went wrong. Please try again later.");
       console.error("Error during registration:", error);
     }
   }
@@ -155,13 +159,14 @@ const Signup = () => {
           {/* Register Button */}
           <button
             type="submit"
-            className="w-full cursor-pointer bg-gradient-to-r from-green-700 to-lime-400 text-white py-2 rounded-lg font-semibold hover:bg-gray-900 transition"
+            className="w-full cursor-pointer bg-linear-to-r from-green-700 to-lime-400 text-white py-2 rounded-lg font-semibold hover:bg-gray-900 transition"
           >
             Register
           </button>
           <Link href="/Account/Signin" className="text-sm text-gray-700 hover:underline -mt-5 block text-center">Already have an account? Login</Link>
         </form>
       </div>
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 };

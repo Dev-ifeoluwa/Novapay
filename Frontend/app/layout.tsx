@@ -8,8 +8,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import MouseDot from "components/MouseDot";
 
-
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

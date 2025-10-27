@@ -9,7 +9,7 @@ export default function AccountCard() {
 
     return(
         <>
-            <div className="flex flex-col gap-6 justify-center py-5 px-3 mx-auto w-full md:max-w-2xl md:p-10 bg-gradient-to-r from-green-900 to-lime-400">
+            <div className="flex flex-col gap-6 justify-center py-5 px-3 mx-auto w-full md:max-w-2xl md:p-10 bg-linear-to-r from-green-900 to-lime-400">
                 <div className="flex items-center justify-between">
                     <div className="max-w-[200px]">
                         <p className="text-lg md:text-2xl text-white font-semibold whitespace-break-spaces">Welcome, <span className="text-green-100 font-semibold">Taiwo</span></p>
@@ -39,9 +39,9 @@ export default function AccountCard() {
                     <div className="flex justify-between gap-4 items-center text-white">
                             <div className="flex items-center gap-2">
                                 <Link href={"/User/Deposit"}
-                                    className="flex rounded-full px-2 py-1 bg-gradient-to-r from-lime-700 to-green-900">
+                                    className="flex rounded-full px-2 py-1 bg-linear-to-r from-lime-700 to-green-900">
                                     <Plus size={17}/>
-                                    <p className="text-[13px] md:text-sm whitespace-nowrap">Add money</p>
+                                    <p className="text-[13px] md:text-sm whitespace-nowrap">Add Funds</p>
                                 </Link>
                                 <button onClick={toggleBalance} 
                                     className="text-xl bg-green-800 p-1 cursor-pointer rounded-full">
