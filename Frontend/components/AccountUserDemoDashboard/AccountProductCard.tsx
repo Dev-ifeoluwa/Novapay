@@ -21,7 +21,7 @@ import {
   export default function AccountProductCard() {
     const router = useRouter()
     const handleClick = () => {
-      router.push("/Account/SignUp")
+      router.push("/Account/Signin")
     }
 
     const BankFeature = [

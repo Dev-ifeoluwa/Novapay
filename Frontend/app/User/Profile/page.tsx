@@ -116,7 +116,7 @@ export default function ProfilePage() {
           />
           <p className="font-semibold">My Profile</p>
         </p>
-        <div className="bg-gradient-to-r from-lime-400 to-green-800 shadow-gray-400 text-center justify-center mt-5 shadow-sm px-2 py-3 rounded-lg">
+        <div className="bg-linear-to-r from-lime-400 to-green-800 shadow-gray-400 text-center justify-center mt-5 shadow-sm px-2 py-3 rounded-lg">
           <div className="p-3">
             <span className="py-3 px-3.5 text-sm font-bold text-gray-700 bg-gray-200 rounded-full">{`${dashboard.firstName?.[0] ?? "U"}${dashboard.lastName?.[0] ?? ""}`}</span>
             <p className="mt-5 text-lg md:text-xl font-semibold text-white">{dashboard.firstName} {dashboard.lastName}</p>
@@ -146,7 +146,7 @@ export default function ProfilePage() {
           <div className="flex flex-col gap-5">
             {SettingsitemsTop.map(({ title, href, icon: Icon }) => (
               <Link href={href} key={title} className="flex items-center gap-3">
-                <div className="p-1 rounded-full text-white bg-gradient-to-r from-green-900 to-lime-400"><Icon size={18} /></div>
+                <div className="p-1 rounded-full text-white bg-linear-to-r from-green-900 to-lime-400"><Icon size={18} /></div>
                 <p>{title}</p>
               </Link>
             ))}
@@ -157,7 +157,7 @@ export default function ProfilePage() {
           <div className="flex flex-col gap-5">
             {SettingsitemsBottom.map(({ title, href, icon: Icon }) => (
               <Link href={href} key={title} className="flex items-center gap-3">
-                <div className="p-1 rounded-full text-white bg-gradient-to-r from-green-900 to-lime-400"><Icon size={18} /></div>
+                <div className="p-1 rounded-full text-white bg-linear-to-r from-green-900 to-lime-400"><Icon size={18} /></div>
                 <p>{title}</p>
               </Link>
             ))}

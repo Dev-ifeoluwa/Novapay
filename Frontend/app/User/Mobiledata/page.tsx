@@ -214,7 +214,7 @@ export default function MobileDataTopup() {
                             onClick={() => handleCardClick(plan)}
                             className="px-2 py-6 flex flex-col gap-2 shadow-sm shadow-gray-600 rounded-2xl cursor-pointer text-green-800 font-semibold text-md text-center bg-gray-100">
                             <p>{plan.dataPlan}</p>
-                            <p className="text-[12px] text-white md:text-sm bg-gradient-to-r from-green-900 to-lime-400">{plan.Validity}</p>
+                            <p className="text-[12px] text-white md:text-sm bg-linear-to-r from-green-900 to-lime-400">{plan.Validity}</p>
                             <p className="text-[12px] md:text-sm text-gray-600">{plan.Price}</p>
                         </div>
                     ))}
@@ -244,7 +244,7 @@ export default function MobileDataTopup() {
                     </div>
                     <div className="flex mt-4 justify-between items-center">
                         <button
-                            className="cursor-pointer w-[150px] bg-gradient-to-r from-green-900 to-lime-400 text-white px-4 py-2 rounded-2xl"
+                            className="cursor-pointer w-[150px] bg-linear-to-r from-green-900 to-lime-400 text-white px-4 py-2 rounded-2xl"
                             onClick={handleProcess}
                         >Process</button>
                         <button

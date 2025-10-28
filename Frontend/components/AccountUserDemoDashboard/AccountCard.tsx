@@ -8,12 +8,12 @@ export default function AccountCard() {
 
     const router = useRouter()
     const handleClick = () => {
-        router.push("/Account/SignUp")
+        router.push("/Account/Signin")
     }
 
     return(
         <>
-            <div className="flex flex-col gap-6 justify-center p-4 mx-auto w-full md:max-w-2xl md:p-10 bg-gradient-to-r from-green-900 to-lime-400">
+            <div className="flex flex-col gap-6 justify-center p-4 mx-auto w-full md:max-w-2xl md:p-10 bg-linear-to-r from-green-900 to-lime-400">
                 <div className="flex items-center justify-between">
                     <div className="flex gap-3 text-lg items-center">
                         <p className="text-lg md:text-2xl text-white font-semibold">Hi</p>
@@ -31,7 +31,7 @@ export default function AccountCard() {
                     <div className="flex  justify-between">
                         <div className="flex flex-col gap-1 mb-6">
                             <p className="text-white font-semibold text-lg md:text-2xl">Account Number</p>
-                            <Link href="/Account/SignUp" className="text-lg md:text-2xl text-white">****</Link>
+                            <Link href="/Account/Signin" className="text-lg md:text-2xl text-white">****</Link>
                         </div>
                         <div className="flex flex-col gap-7 items-center">
                             <div className="flex gap-2 items-center">
@@ -48,7 +48,7 @@ export default function AccountCard() {
                                 <span className="bg-green-900 p-1 rounded-full"><EyeIcon size={18}/></span>
                                 <span className="bg-green-900 p-1 rounded-full"><Plus size={18}/></span>
                             </div>
-                            <Link href="/Account/SignUp" className="text-lg md:text-2xl text-white">****</Link>
+                            <Link href="/Account/Signin" className="text-lg md:text-2xl text-white">****</Link>
                     </div>
                 </div>
             </div>

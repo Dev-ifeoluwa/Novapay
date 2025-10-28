@@ -20,7 +20,7 @@ export default function AddMoney() {
                     <p className="font-semibold">Add Money</p>
                 </p>
             </span>
-            <div className="bg-gradient-to-r from-green-900 to-lime-400 text-white flex flex-col gap-4 mt-4 px-4 py-2  rounded-md shadow-sm shadow-gray-400">
+            <div className="bg-linear-to-r from-green-900 to-lime-400 text-white flex flex-col gap-4 mt-4 px-4 py-2  rounded-md shadow-sm shadow-gray-400">
                 <div className="flex justify-between p-2 items-center">
                     <div className="flex items-center gap-4">
                         <span className="p-2 bg-green-700 text-white rounded-full"><Home /></span>

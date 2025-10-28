@@ -107,7 +107,7 @@ export default function userSettings() {
           <div className="flex flex-col gap-5">
             {SettingsitemsTop.map(({ title, href, icon: Icon }) => (
               <Link href={href} key={title} className="flex items-center gap-3">
-                <div className="p-1 rounded-full text-white bg-gradient-to-r from-green-900 to-lime-400"><Icon size={18}/></div>
+                <div className="p-1 rounded-full text-white bg-linear-to-r from-green-900 to-lime-400"><Icon size={18}/></div>
                 <p>{title}</p>
               </Link>
             ))}
@@ -117,7 +117,7 @@ export default function userSettings() {
           <div className="flex flex-col gap-5">
             {settingsItemsMiddle.map(({ title, href, icon: Icon }) => (
               <Link href={href} key={title} className="flex items-center gap-3">
-                <div className="p-1 rounded-full text-white bg-gradient-to-r from-green-900 to-lime-400"><Icon size={18}/></div>
+                <div className="p-1 rounded-full text-white bg-linear-to-r from-green-900 to-lime-400"><Icon size={18}/></div>
                 <p>{title}</p>
               </Link>
             ))}
@@ -127,7 +127,7 @@ export default function userSettings() {
           <div className="flex flex-col gap-5">
             {SettingsitemsBottom.map(({ title, href, icon: Icon }) => (
               <Link href={href} key={title} className="flex items-center gap-3">
-                <div className="p-1 rounded-full text-white bg-gradient-to-r from-green-900 to-lime-400"><Icon size={18}/></div>
+                <div className="p-1 rounded-full text-white bg-linear-to-r from-green-900 to-lime-400"><Icon size={18}/></div>
                 <p>{title}</p>
               </Link>
             ))}

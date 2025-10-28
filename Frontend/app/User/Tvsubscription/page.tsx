@@ -148,7 +148,7 @@ export default function TvSubsPage() {
                                 onClick={() => handleCardClick(plan)}
                                 className="px-3 py-10 flex flex-col gap-2 shadow-sm shadow-gray-600 rounded-2xl text-md cursor-pointer text-green-800 font-semibold text-center bg-gray-100">
                                 <p>{plan.Name}</p>
-                                <p className="text-[12px] md:text-sm text-gray-200 bg-gradient-to-r from-green-900 to-lime-400">{plan.Plan}</p>
+                                <p className="text-[12px] md:text-sm text-gray-200 bg-linear-to-r from-green-900 to-lime-400">{plan.Plan}</p>
                                 <p className="text-[14px] md:text-sm">₦{plan.Price}</p>
                             </div>
                         ))}
@@ -178,7 +178,7 @@ export default function TvSubsPage() {
                         </div>
                         <div className="flex mt-4 justify-between items-center">
                             <button
-                                className="cursor-pointer w-[150px] bg-gradient-to-r from-green-900 to-lime-400 text-white px-4 py-2 rounded-2xl"
+                                className="cursor-pointer w-[150px] bg-linear-to-r from-green-900 to-lime-400 text-white px-4 py-2 rounded-2xl"
                                 onClick={handleProcess}
                             >Process</button>
                             <button 

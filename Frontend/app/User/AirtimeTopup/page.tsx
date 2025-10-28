@@ -121,7 +121,7 @@ export default function AirtimeTopup() {
                         </div>
                         <button
                             onClick={handlePurchaseBtn}
-                            className="font-semibold px-3 py-1 cursor-pointer shadow-sm shadow-gray-600 text-white  text-[12px] md:text-sm rounded-2xl bg-gradient-to-r from-green-900 to-lime-400">Purchase</button>
+                            className="font-semibold px-3 py-1 cursor-pointer shadow-sm shadow-gray-600 text-white  text-[12px] md:text-sm rounded-2xl bg-linear-to-r from-green-900 to-lime-400">Purchase</button>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@ export default function AirtimeTopup() {
                         </div>
                         <div className="flex mt-4 justify-between items-center">
                             <button
-                                className="cursor-pointer w-[150px] bg-gradient-to-r from-green-900 to-lime-400 text-white px-4 py-2 rounded-2xl"
+                                className="cursor-pointer w-[150px] bg-linear-to-r from-green-900 to-lime-400 text-white px-4 py-2 rounded-2xl"
                                 onClick={handleProcess}
                             >Process</button>
                             <button

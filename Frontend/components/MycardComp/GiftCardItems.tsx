@@ -19,7 +19,7 @@ const GiftCardItem: React.FC<{ card: GiftCard; isSelected: boolean; onClick: () 
   return (
     <div 
       className={`border rounded-lg p-4 cursor-pointer transition-all ${
-        isSelected 
+        isSelected
           ? 'border-green-500 ring-2 ring-blue-100 bg-blue-50' 
           : 'border-gray-200 hover:border-gray-300'
       }`}

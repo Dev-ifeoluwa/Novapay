@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 export default function AccountFoot() {
      const router = useRouter()
         const handleClick = () => {
-            router.push("/Account/SignUp")
+            router.push("/Account/Signin")
         }
 
     return(

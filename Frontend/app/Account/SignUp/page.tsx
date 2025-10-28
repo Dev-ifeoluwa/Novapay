@@ -51,7 +51,7 @@ const Signup = () => {
         {/* Header */}
         <div className="flex flex-col items-center mb-4">
           <div>
-            <Image src="/signicon.png" alt="Logo" width={72} height={72} />
+            <Image src="/favicon.ico" alt="Logo" width={72} height={72} />
           </div>
           <h2 className="text-lg font-semibold mt-3 text-gray-800">
             ACCOUNT SIGNUP
