@@ -75,7 +75,7 @@ export default function UserDashboard() {
                                     <p className="text-white text-md md:text-xl">************</p>
                                     <p className="text-white text-md md:text-xl">{dashboard.accountNumber}</p>
                                 </div>
-                                <div className="flex flex-col gap-7 items-center">
+                                <div className="flex flex-col gap-0.5 text-white text-right">
                                     <div className="flex gap-2 items-center">
                                         <p className="text-md text-white font-semibold">Currency</p>
                                         <select name="" id="" className="text-white border-0 outline-0">
@@ -83,6 +83,9 @@ export default function UserDashboard() {
                                             <option value="" className="text-black">£</option>
                                         </select>
                                     </div>
+                                    <span>
+                                        {showBalance ? <span className="blur-[6px]">${dashboard.balance.toFixed(2)}</span> : <>${dashboard.balance.toFixed(2)}</>}
+                                    </span>
                                 </div>
                             </div>
                             <div className="flex justify-between gap-4 items-center text-white">
@@ -97,7 +100,7 @@ export default function UserDashboard() {
                                         {showBalance ? <EyeOffIcon size={17} /> : <EyeIcon size={17} />}
                                     </button>
                                 </div>
-                                <div className="flex items-center whitespace-nowrap justify-center">
+                                <div className="flex flex-col -gap-4 items-center whitespace-nowrap justify-center">
                                     <span className="text-[1.4rem] md:text-3xl font-bold">
                                         {showBalance ? <span className="blur-[6px]">₦{dashboard.balance.toFixed(2)}</span> : <>₦{dashboard.balance.toFixed(2)}</>}
                                     </span>

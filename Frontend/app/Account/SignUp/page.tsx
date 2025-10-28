@@ -46,16 +46,24 @@ const Signup = () => {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center px-2 py-15 justify-center min-h-screen bg-gray-100">
+        <div className="flex items-center gap-4 px-auto mx-auto pb-6 ">
+          <Image 
+            src="/favicon.ico" 
+            alt="Logo" 
+            width={40} 
+            height={40} 
+            className="rounded-full bg-green-950"
+            />
+            <h2 className="text-2xl font-bold">Shalompay</h2>
+        </div>
       <div className="bg-white rounded-2xl shadow-md p-8 w-full max-w-md">
         {/* Header */}
         <div className="flex flex-col items-center mb-4">
-          <div>
-            <Image src="/favicon.ico" alt="Logo" width={72} height={72} />
-          </div>
           <h2 className="text-lg font-semibold mt-3 text-gray-800">
-            ACCOUNT SIGNUP
+            Create Account
           </h2>
+          <p className="text-gray-400 text-md md:text-base mb-7">Let's get you started with your shalompay account.</p>
         </div>
 
         {/* Form */}
@@ -161,9 +169,9 @@ const Signup = () => {
             type="submit"
             className="w-full cursor-pointer bg-linear-to-r from-green-700 to-lime-400 text-white py-2 rounded-lg font-semibold hover:bg-gray-900 transition"
           >
-            Register
+            Create My Account
           </button>
-          <Link href="/Account/Signin" className="text-sm text-gray-700 hover:underline -mt-5 block text-center">Already have an account? Login</Link>
+          <Link href="/Account/Signin" className="text-sm text-gray-700 hover:underline -mt-5 block text-center">Already have an account? <strong className="text-green-700">Login</strong></Link>
         </form>
       </div>
       <Toaster position="top-center" reverseOrder={false} />
