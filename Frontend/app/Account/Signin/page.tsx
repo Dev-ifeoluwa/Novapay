@@ -33,7 +33,7 @@ const Signin = () => {
       const token = data.tokens?.accessToken
       if (res.ok) {
         localStorage.setItem('token', token);
-        toast.success("Login in successfully!")
+        toast.success("Login successfully!")
         console.log('Login successful!');
         router.push("/UserDashboard");
 
