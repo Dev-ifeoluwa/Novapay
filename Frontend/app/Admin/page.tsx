@@ -118,7 +118,6 @@ export default function App() {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
-
           'content-type': 'application/json'
         },
         // credentials: "include",
