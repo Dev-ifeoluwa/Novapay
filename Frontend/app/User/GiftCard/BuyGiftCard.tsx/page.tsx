@@ -16,22 +16,22 @@ import { useState } from "react";
     { 
       id: 'Apple', 
       name: 'Apple', 
-      logo: '/apple.jfif' 
+      logo: '/apple1.webp' 
     },
     {
-       id: 'Starbucks', 
-       name: 'Starbucks', 
-       logo: '/starbucks.jfif' 
+       id: 'Stream', 
+       name: 'Stream', 
+       logo: '/steam.webp' 
     },
     {
        id: 'Google', 
        name: 'Google', 
-       logo: '/google.jfif' 
+       logo: '/google1.png' 
     },
     {
        id: 'Netflix', 
        name: 'Netflix', 
-       logo: '/Netfilx.jfif' 
+       logo: '/net.png' 
     },
     {
        id: 'Spotify', 
