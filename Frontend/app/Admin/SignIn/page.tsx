@@ -32,6 +32,7 @@ export default function AdminSignInPage() {
             const token = data.tokens?.accessToken
             if (res.ok) {
                 localStorage.setItem('token', token);
+                console.log('this is token',token)
                 toast.success("Admin Login successfully!")
                 console.log('Login successful!');
                 router.push("/Admin");

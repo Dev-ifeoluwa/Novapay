@@ -109,7 +109,7 @@ export default function App() {
 
     if (!token) {
       console.error("No token found, redirecting to signin.");
-      router.push('/Account/Signin');
+      router.push('/Admin/SignIn');
       return;
     }
 
@@ -118,6 +118,7 @@ export default function App() {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
+
           'content-type': 'application/json'
         },
         // credentials: "include",
