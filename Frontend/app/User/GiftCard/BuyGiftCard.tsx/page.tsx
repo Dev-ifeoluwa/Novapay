@@ -29,9 +29,9 @@ import { useState } from "react";
        logo: '/google1.png' 
     },
     {
-       id: 'Netflix', 
-       name: 'Netflix', 
-       logo: '/net.png' 
+       id: 'Ebay', 
+       name: 'Ebay', 
+       logo: '/ebay.jpg' 
     },
     {
        id: 'Spotify', 
